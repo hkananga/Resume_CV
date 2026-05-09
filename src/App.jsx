@@ -164,14 +164,35 @@ function App() {
               onClick={() => setTemplate('plain')}
               style={{ border: 'none', boxShadow: template === 'plain' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none' }}
             >
-              <FileText size={16} /> Plain
+              Plain
             </button>
             <button 
               className={`btn btn-outline ${template === 'modern' ? 'active' : ''}`}
               onClick={() => setTemplate('modern')}
               style={{ border: 'none', boxShadow: template === 'modern' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none' }}
             >
-              <Paintbrush size={16} /> Modern
+              Modern
+            </button>
+            <button 
+              className={`btn btn-outline ${template === 'executive' ? 'active' : ''}`}
+              onClick={() => setTemplate('executive')}
+              style={{ border: 'none', position: 'relative', boxShadow: template === 'executive' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none' }}
+            >
+              Executive <span className="premium-badge">Pro</span>
+            </button>
+            <button 
+              className={`btn btn-outline ${template === 'creative' ? 'active' : ''}`}
+              onClick={() => setTemplate('creative')}
+              style={{ border: 'none', position: 'relative', boxShadow: template === 'creative' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none' }}
+            >
+              Creative <span className="premium-badge">Pro</span>
+            </button>
+            <button 
+              className={`btn btn-outline ${template === 'minimalist' ? 'active' : ''}`}
+              onClick={() => setTemplate('minimalist')}
+              style={{ border: 'none', position: 'relative', boxShadow: template === 'minimalist' ? '0 1px 3px rgba(0,0,0,0.1)' : 'none' }}
+            >
+              Minimalist <span className="premium-badge">Pro</span>
             </button>
           </div>
           {!user && (

@@ -134,6 +134,20 @@ body {
   border-color: var(--primary-blue);
 }
 
+.premium-badge {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: white;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 .btn:disabled {
   opacity: 0.7;
   cursor: not-allowed;
@@ -393,6 +407,145 @@ body {
   padding: 4px 10px;
   border-radius: 4px;
   font-size: 13px;
+}
+
+/* Template: Executive (Premium) */
+.template-executive {
+  padding: 50px;
+  font-family: 'Playfair Display', serif;
+  color: #1a1a1a;
+  background-color: #fff;
+}
+.template-executive .header {
+  text-align: center;
+  border-bottom: 2px solid #1a1a1a;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.template-executive h1 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.template-executive .job-title {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
+.template-executive .contact-bar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+}
+.template-executive .section-title {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+  margin: 30px 0 15px 0;
+  padding-bottom: 5px;
+}
+.template-executive .item-header {
+  font-weight: 700;
+  font-size: 15px;
+}
+.template-executive p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Template: Creative (Premium) */
+.template-creative {
+  display: flex;
+  min-height: 297mm;
+  font-family: 'Outfit', sans-serif;
+}
+.template-creative .sidebar {
+  width: 35%;
+  background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+  color: white;
+  padding: 40px 30px;
+}
+.template-creative .main {
+  width: 65%;
+  padding: 50px;
+  background-color: #fcfcfc;
+}
+.template-creative h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  line-height: 1.1;
+}
+.template-creative .section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  position: relative;
+}
+.template-creative .sidebar .section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background: rgba(255,255,255,0.5);
+}
+.template-creative .main .section-title {
+  color: #4f46e5;
+}
+.template-creative .skill-badge {
+  background: rgba(255,255,255,0.2);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  margin: 0 5px 8px 0;
+  display: inline-block;
+}
+
+/* Template: Minimalist (Premium) */
+.template-minimalist {
+  padding: 60px;
+  font-family: 'Inter', sans-serif;
+  color: #2d3748;
+}
+.template-minimalist .header {
+  margin-bottom: 40px;
+}
+.template-minimalist h1 {
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+.template-minimalist .section {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.template-minimalist .section-label {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #a0aec0;
+  letter-spacing: 1px;
+}
+.template-minimalist .item {
+  margin-bottom: 25px;
+}
+.template-minimalist .item-title {
+  font-size: 16px;
+  font-weight: 700;
+}
+.template-minimalist .item-meta {
+  font-size: 14px;
+  color: #718096;
+  margin-bottom: 8px;
 }
 
 /* Responsive */
